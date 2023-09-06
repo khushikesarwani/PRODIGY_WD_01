@@ -1,0 +1,64 @@
+@media only screen and (max-width:992px) {
+
+    .nav-container{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       
+    }
+     .logo{
+        width: 80%;
+        justify-content: flex-start;
+     }
+
+    .menu{
+        width:100%;
+        margin-left:0;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0,0.8);
+        -webkit-backdrop-filter: blur(5px);
+       backdrop-filter: blur(5px);
+        
+        display: none;
+        transition: .4s ease-in-out;
+    
+    }
+    .nav-menu{
+        flex-direction: column;
+    }
+   .nav-container .toggle-collapse{
+    display:initial;
+   }
+   
+   .menu ul, .menu li{
+    width:100%;
+    margin-right: 0;
+    padding-right: 0;
+   }
+   .show{
+    
+    display:initial;
+    transition:  .7s ease-in;
+   }
+    
+  
+
+   .box{
+    display:none;
+   }
+.register{
+    display:initial;
+   }
+   .showform{
+    order:-12;
+    display:block;
+    width:100%;
+    transition:  .7s ease-in;
+   
+}
+
+
+ }
