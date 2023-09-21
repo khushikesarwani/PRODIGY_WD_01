@@ -52,6 +52,13 @@
 .register{
     display:initial;
    }
+   .box h2{
+    font-size:2rem;
+}
+.box p{
+
+    font-size:1rem;
+}
    .showform{
     order:-12;
     display:block;
@@ -60,5 +67,130 @@
    
 }
 
+.cus-cards-container{
+    grid-template-columns:repeat(2,minmax(200px,50%));
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+ 
+.work-container{
+    height:auto;
+}
+.work-content i{
+    font-size:5rem;
+}
+.w p{
+    font-size:2.4rem;
+    
+} 
+.w small{
+    font-size:1rem;
+}
+.work-row{
+    flex-direction: column;
+    width:100%;
+}
+.work-image{
+    margin:auto;
+    width:80%;
+    height:60%;
+}
+.work-content{
+    width:80%;
+    margin:auto;
+}
 
  }
+ @media only screen and (max-width:768px){
+    .promise{
+        max-height:80%;
+    }
+    .promise-container{
+        flex-direction: column;
+        width:80%;
+        max-height: 100%;
+        margin-left:auto;
+        margin-right: auto;
+        
+
+    }
+    .pr{
+        height:33%;
+        width:100%;
+        
+    }
+    .pr h3{
+        font-size: 3rem;
+        margin-bottom: 1%;
+        
+    }
+    .pr p{
+        font-size: 1.8rem;
+    }
+    .w p{
+        font-size:1.6rem;
+        font-weight: bold;
+    }
+    
+    .w small{
+        font-size:1rem;
+    }
+
+ }
+@media only screen and (max-width:600px){
+    .main h2{
+        font-size: 1.7rem;
+    }
+    .main h1{
+        font-size: 3.2rem;
+    }
+
+    .main p{
+        font-size: 1rem;
+    }
+    
+    .cus-cards-container{
+        grid-template-columns:repeat(1,minmax(200px,100%));
+        grid-template-rows:repeat(4,1fr);
+        justify-content: center;
+    }
+    .work-container{
+        
+        height:auto;
+        
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        
+     }
+    .work-content{
+        /* width:50%; */
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,25%);
+        justify-content:start; 
+        column-gap:0;
+       row-gap: 0;
+        
+        
+    }
+    .w p{
+        font-size:2rem;
+        
+    } 
+    .w small{
+        font-size:0.8rem;
+    }
+    .footer{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .l{
+        text-align: center;
+    }
+    .footer .r{
+        margin-left: 2rem;
+    }
+    .footer i{
+        font-size: 1.1rem;
+    }
+}
